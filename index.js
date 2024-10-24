@@ -14,7 +14,7 @@
     app.use(bodyParser.urlencoded({ extended: true }));
 
     // Endpoint to receive orders
-    app.post('https://backmilliy-production.up.railway.app/orders', async (req, res) => {
+    app.post('/orders', async (req, res) => {
     const orderData = req.body;
 
     // Send order data to Telegram
